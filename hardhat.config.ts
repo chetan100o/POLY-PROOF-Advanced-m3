@@ -22,6 +22,12 @@ const config: HardhatUserConfig = {
       }
     ]
   },
+  networks:{
+    mumbai: {
+      url: `https://polygon-mumbai.g.alchemy.com/v2/gM3H7IOtDfLeugcauAOY3Fie_TMePgHQ`,
+      accounts: ["16775d6fa907c03fa6b07527d26d95318967342e0f8b0621a3d01199f836c66f"],
+    }
+  },
   circom: {
     // (optional) Base path for input files, defaults to `./circuits/`
     inputBasePath: "./circuits",
