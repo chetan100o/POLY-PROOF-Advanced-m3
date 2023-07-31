@@ -1,27 +1,22 @@
-# zardkat 🐱
+# polygon 
 
-A [hardhat-circom](https://github.com/projectsophon/hardhat-circom) template to generate zero-knowledge circuits, proofs, and solidity verifiers
 
-## Quick Start
-Compile the Multiplier2() circuit and verify it against a smart contract verifier
+# ZK-SNARK-Assessment
 
-```
-pragma circom 2.0.0;
+This repository is for the project assessment of the project of the 3rd module of : POLY PROOF: Advanced course of Metacrafters academy . The purpose of creating this to prove my learning and to showcase my skill as a circom, solidity developer to the people.
 
-/*This circuit template checks that c is the multiplication of a and b.*/  
+## Problem Statement
 
-template Multiplier2 () {  
+Imagine that you wake up, check your email, and you see an interesting task: Polygon is asking you to design a new zkSNARK circuit that implements some logical operations. You need to implement the circuit and deploy a verifier on-chain to verify proofs generated from this circuit
 
-   // Declaration of signals.  
-   signal input a;  
-   signal input b;  
-   signal output c;  
+For this project, you will create a circuit using the circom programming language that implements the following logical gate:
 
-   // Constraints.  
-   c <== a * b;  
-}
-component main = Multiplier2();
-```
+![image](https://github.com/Amanlath1/ZK-SNARK-Assessment/assets/85346421/7e110f95-ca5e-46fa-9ed7-516f7a60d321)
+
+
+## Description
+This program is a simple contract written in circom, solidity,  a programming language used for developing smart contracts on the blockchain. The contract has been created to verify the circuit using the different gates and verifing the output and deploying the contract created on the mumbai testnet which is the testnet for the polygon chain network and which uses MATIC as its currency for the gas fees.
+
 ### Install
 `npm i`
 
